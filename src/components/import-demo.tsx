@@ -95,15 +95,15 @@ export function ImportDemo() {
   return (
     <section className="workspace" aria-labelledby="demo-title">
       <aside className="workspace-aside">
-        <p className="eyebrow">ÇALIŞAN İLK DİLİM</p>
-        <h2>Medya → Ürün Taslağı</h2>
+        <p className="eyebrow">TEKNİK SÖZLEŞME DEMOSU</p>
+        <h2>Örnek Medya → Ürün Taslağı</h2>
         <p>
-          Bu ekran gerçek API sözleşmesini kullanır. Sonuç hiçbir platformda
-          otomatik yayınlanmaz.
+          Bu bölüm örnek veriyle ürün sözleşmesini gösterir; kalıcı kullanıcı
+          verisi veya gerçek Instagram bağlantısı değildir.
         </p>
         <div className="step-list">
           {[
-            "Hesabı doğrula",
+            "Örnek kaynağı hazırla",
             "Medyayı seç",
             "Taslakları hazırla",
             "Vixrex’te onayla",
@@ -123,7 +123,7 @@ export function ImportDemo() {
             <h2 id="demo-title">Ürün olacak içerikleri seç</h2>
             <p>Birden fazla fotoğraf veya videoyu aynı anda hazırlayabilirsin.</p>
           </div>
-          <span className="verified-badge">✓ Hesap doğrulandı</span>
+          <span className="verified-badge">Örnek veri</span>
         </div>
 
         <div className="media-grid">

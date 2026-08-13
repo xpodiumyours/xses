@@ -39,6 +39,7 @@ button { cursor: pointer; }
 .brand-mark { width: 36px; height: 36px; display: grid; place-items: center; border-radius: 12px; background: var(--ink); color: white; font-size: 12px; }
 .status-pill { display: flex; gap: 8px; align-items: center; padding: 9px 13px; border: 1px solid var(--line); border-radius: 999px; background: rgba(255,255,255,.72); color: var(--muted); font-size: 13px; }
 .status-pill span { width: 8px; height: 8px; background: #2aaf76; border-radius: 50%; box-shadow: 0 0 0 4px rgba(42,175,118,.12); }
+.status-pill.pending span { background: #d49a22; box-shadow: 0 0 0 4px rgba(212,154,34,.13); }
 
 .hero { max-width: 1240px; margin: 0 auto; padding: 74px 0 48px; display: grid; grid-template-columns: 1.35fr .65fr; gap: 56px; align-items: end; }
 .hero-copy { max-width: 780px; }
@@ -52,6 +53,31 @@ h1 { max-width: 760px; margin: 0; font-size: clamp(42px, 6.2vw, 76px); line-heig
 .boundary-card ol { margin: 0; padding-left: 22px; }
 .boundary-card li { padding: 9px 0; color: var(--muted); line-height: 1.5; }
 .boundary-card b { color: var(--ink); }
+
+.account-card, .job-panel { max-width: 1240px; margin: 12px auto 28px; border: 1px solid var(--line); border-radius: 24px; background: rgba(255,255,255,.88); box-shadow: 0 20px 60px rgba(18,54,42,.07); }
+.account-card { display: flex; align-items: center; justify-content: space-between; gap: 32px; padding: 28px 32px; }
+.account-card h2, .job-panel h2 { margin: 0 0 9px; font-size: 28px; letter-spacing: -.03em; }
+.account-card p:not(.eyebrow), .job-panel-copy > p:not(.eyebrow) { max-width: 700px; margin: 0; color: var(--muted); line-height: 1.6; }
+.connection-card { border-color: #eadcb8; background: #fffdf7; }
+.connection-state { flex: 0 0 auto; padding: 9px 12px; border-radius: 999px; background: #f8edcf; color: #7a5810; font-size: 12px; font-weight: 800; }
+.secondary-link { flex: 0 0 auto; padding: 12px 16px; border: 1px solid var(--line); border-radius: 12px; background: white; color: var(--brand); font-size: 13px; font-weight: 800; text-decoration: none; }
+.auth-actions { flex: 0 0 auto; }
+.inline-error { margin: 10px 0 0; color: var(--danger); font-size: 13px; }
+.session-bar { max-width: 1240px; margin: 12px auto; display: flex; align-items: center; justify-content: flex-end; gap: 14px; color: var(--muted); font-size: 13px; }
+.text-button { border: 0; padding: 5px 0; background: transparent; color: var(--brand); font-weight: 800; }
+
+.job-panel { padding: 32px; }
+.job-panel-copy { margin-bottom: 26px; }
+.job-form { padding: 22px; border: 1px solid var(--line); border-radius: 18px; background: var(--soft); }
+.job-form label { display: block; margin-bottom: 9px; font-size: 13px; font-weight: 800; }
+.job-form-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 12px; }
+.job-form input { width: 100%; min-height: 48px; padding: 0 14px; border: 1px solid #cfdad5; border-radius: 12px; background: white; color: var(--ink); outline: none; }
+.job-form input:focus { border-color: var(--brand); box-shadow: 0 0 0 3px rgba(13,119,89,.12); }
+.job-list { margin-top: 26px; }
+.job-list h3 { margin: 0 0 12px; }
+.job-row { display: grid; grid-template-columns: 1fr auto; gap: 16px; align-items: center; padding: 15px; border-top: 1px solid var(--line); }
+.job-row p { margin: 4px 0 0; color: var(--muted); font-size: 12px; }
+.empty-state { margin: 0; padding: 20px; border: 1px dashed #cbd8d2; border-radius: 14px; color: var(--muted); text-align: center; }
 
 .workspace { max-width: 1240px; margin: 12px auto 0; display: grid; grid-template-columns: 360px 1fr; border: 1px solid var(--line); border-radius: 28px; overflow: hidden; background: var(--surface); box-shadow: 0 30px 80px rgba(18,54,42,.09); }
 .workspace-aside { padding: 28px; background: var(--ink); color: white; }
@@ -113,4 +139,9 @@ h1 { max-width: 760px; margin: 0; font-size: clamp(42px, 6.2vw, 76px); line-heig
   .media-grid { grid-template-columns: 1fr; }
   .media-card { min-height: 185px; }
   .action-row { align-items: stretch; flex-direction: column; }
+  .account-card { display: block; padding: 22px; }
+  .account-card .auth-actions, .connection-state { display: inline-block; margin-top: 18px; }
+  .job-panel { padding: 22px; }
+  .job-form-row { grid-template-columns: 1fr; }
+  .session-bar { justify-content: space-between; }
 }
